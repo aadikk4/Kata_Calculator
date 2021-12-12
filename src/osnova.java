@@ -29,7 +29,7 @@ public class osnova {
                 input1Int = RimArab.NumToArab(input1);
                 input2Int = RimArab.NumToArab(input2);
             }
-            if(input1Int !=-1 && input2Int !=-1)
+            if(input1Int > 0 && input1Int <= 10 && input2Int > 0 && input2Int <= 10)
                 raschyot.Arithmetic_Expression(Arithmetic_Expression);
             else
                 System.out.println("Некорректный ввод данных");
