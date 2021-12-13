@@ -26,6 +26,9 @@ public class raschyot {
             else if (summ == 49){
                 System.out.println("XLIX");
             }
+            else if (summ == 90){
+                    System.out.println("XC");
+            }
             else {
                 while(summ>=100) {
                     ans.append("C");
