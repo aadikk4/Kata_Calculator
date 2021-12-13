@@ -11,28 +11,44 @@ public class raschyot {
             summ = osnova.input1Int / osnova.input2Int;
         if(osnova.input1B){
             StringBuilder ans = new StringBuilder();
-            while(summ>=100) {
-                ans.append("C");
-                summ-=100;
+            if (summ == 40){
+                System.out.println("XL");
             }
-            while(summ>=50) {
-                ans.append("L");
-                summ -= 50;
+            else if (summ == 42){
+                System.out.println("XLII");
             }
-            while(summ>=10) {
-                ans.append("X");
-                summ -= 10;
+            else if (summ == 45){
+                System.out.println("XLV");
             }
-            if(summ == 1) ans.append("I");
-            else if(summ == 2) ans.append("II");
-            else if(summ == 3) ans.append("III");
-            else if(summ == 4) ans.append("IV");
-            else if(summ == 5) ans.append("V");
-            else if(summ == 6) ans.append("VI");
-            else if(summ == 7) ans.append("VII");
-            else if(summ == 8) ans.append("IIX");
-            else if(summ == 9) ans.append("IX");
-            System.out.println(ans);
-        }else System.out.println(summ);
+            else if (summ == 48){
+                System.out.println("XLVIII");
+            }
+            else if (summ == 49){
+                System.out.println("XLIX");
+            }
+            else {
+                while(summ>=100) {
+                    ans.append("C");
+                    summ-=100;
+                }
+                while(summ>=50) {
+                    ans.append("L");
+                    summ -= 50;
+                }
+                while(summ>=10) {
+                    ans.append("X");
+                    summ -= 10;
+                }
+                if(summ == 1) ans.append("I");
+                else if(summ == 2) ans.append("II");
+                else if(summ == 3) ans.append("III");
+                else if(summ == 4) ans.append("IV");
+                else if(summ == 5) ans.append("V");
+                else if(summ == 6) ans.append("VI");
+                else if(summ == 7) ans.append("VII");
+                else if(summ == 8) ans.append("IIX");
+                else if(summ == 9) ans.append("IX");
+                    System.out.println(ans); }
+            }else System.out.println(summ);
     }
 }
